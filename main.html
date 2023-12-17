@@ -1,16 +1,87 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>AccioJob Internship Application</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="container mt-5">
+    <form>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="first-name-input">First Name</label>
+                <input type="text" class="form-control" id="first-name-input" placeholder="First Name" required>
+                <div class="invalid-feedback">
+                    Please provide a valid first name.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="last-name-input">Last Name</label>
+                <input type="text" class="form-control" id="last-name-input" placeholder="Last Name" required>
+                <div class="invalid-feedback">
+                    Please provide a valid last name.
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="email-input">Email</label>
+                <input type="email" class="form-control" id="email-input" placeholder="Email" required>
+                <div class="invalid-feedback">
+                    Please provide a valid email.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="college-input">College Name</label>
+                <input type="text" class="form-control" id="college-input" placeholder="College Name" required>
+                <div class="invalid-feedback">
+                    Please provide a valid college name.
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="roll-no-input">Roll No</label>
+                <input type="text" class="form-control" id="roll-no-input" placeholder="Roll No" required>
+                <div class="invalid-feedback">
+                    Please provide a valid roll number.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="graduation-year-select">Graduation Year</label>
+                <select class="form-control" id="graduation-year-select" required>
+                    <option value="" selected disabled>Select Graduation Year</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid graduation year.
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
+            <label class="form-check-label" for="conditions-checkbox">I agree to the terms and conditions</label>
+            <div class="invalid-feedback">
+                You must agree to the terms and conditions.
+            </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
